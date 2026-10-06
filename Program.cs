@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using System.Collections;
+using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 
 string subject = "Программирование";
 
@@ -36,3 +38,32 @@ for (int i = 0; i < points.Length; i++)
 }
 
 
+string[] students2 = { "Аня", "Борис", "Вика" };
+int number = 1;
+
+foreach (string student in students2)
+{
+    Console.WriteLine($"{number}. {student}");
+    number++;
+}
+
+
+Console.WriteLine("Задача А");
+int[] exA = { 5, 7, 5, 9, 1 };
+int sum2 = 0;
+foreach (int exA2 in exA)
+{
+    Console.WriteLine(exA2);
+    sum2 += exA2;
+}
+Console.WriteLine($"Сумма чисел: {sum2}");
+
+
+Console.WriteLine("Задача В");
+string texts = "Фамилия";
+int sum3 = 0;
+foreach (char text in texts)
+{
+    
+}
+Console.WriteLine();

@@ -1,4 +1,6 @@
-﻿string subject = "Программирование";
+﻿using System.Drawing;
+
+string subject = "Программирование";
 
 foreach (char letter in subject)
 {
@@ -14,4 +16,23 @@ foreach (int grade in grades)
     sum += grade;
 }
 Console.WriteLine($"Средний балл: {(double)sum / grades.Length}");
+
+
+string[] students = { "Аня", "Ярослав", "Вика" };
+int count = 0;
+foreach (string student in students)
+{
+    Console.WriteLine(student);
+    count += 1;
+}
+Console.WriteLine($"Всего учеников: {count}");
+
+
+int[] points = { 10, 20, 15 };
+for (int i = 0; i < points.Length; i++)
+{
+    points[i] = points[i] + 5;
+    Console.WriteLine(points[i]);
+}
+
 

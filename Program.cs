@@ -101,3 +101,23 @@ for (int num = 0; num < numbers1.Length; num++)
     numbers1[num] = numbers1[num] + 1;
     Console.WriteLine(numbers1[num]);
 }
+
+
+Console.WriteLine("Дополнительное задание. Журнал оценок класса");
+string[] names = ["Виктор", "Джулия", "Роман"];
+int[] grades1 = [2, 5, 4];
+int gradeMax = grades1[0];
+string studentBest = names[0];
+int countGrades = 0;
+for (int j = 0; j< names.Length; j++)
+{
+    Console.WriteLine($"Имя: {names[j]}, оценка: {grades1[j]}");
+    if (gradeMax < grades1[j])
+    {
+        gradeMax = grades1[j];
+        studentBest = names[j];
+    }
+    countGrades += grades1[j];
+}
+Console.WriteLine($"Имя ученика с максимальной оценкой: {studentBest}");
+Console.WriteLine($"Средний балл по классу: {(double)countGrades / grades1.Length}");
